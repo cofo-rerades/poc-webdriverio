@@ -1,0 +1,41 @@
+// Snapshot v1
+
+exports[`Index page Visual regression > should show index page  > index-page 1`] = `
+Browser {
+  "addCommand": [Function],
+  "addLocatorStrategy": [Function],
+  "capabilities": {
+    "acceptInsecureCerts": true,
+    "browserName": "chrome",
+    "browserVersion": "134.0.6998.90",
+    "chrome": {
+      "chromedriverVersion": "134.0.6998.90 (219ee74681fc640b1ee1af1c99df3729a0ec25a8-refs/branch-heads/6998@{#1900})",
+      "userDataDir": "/var/folders/25/h2z5y8yd5h13qz5fpv84cd4w0000gn/T/.org.chromium.Chromium.l933ca",
+    },
+    "fedcm:accounts": true,
+    "goog:chromeOptions": {
+      "debuggerAddress": "localhost:58405",
+    },
+    "networkConnectionEnabled": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "mac",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000,
+    },
+    "unhandledPromptBehavior": "dismiss and notify",
+    "wdio:driverPID": 59032,
+    "webauthn:extension:credBlob": true,
+    "webauthn:extension:largeBlob": true,
+    "webauthn:extension:minPinLength": true,
+    "webauthn:extension:prf": true,
+    "webauthn:virtualAuthenticators": true,
+  },
+  "overwriteCommand": [Function],
+  "sessionId": "44fcecf2fce23d0e75d1fd9ed6f2b0f5",
+}
+`;

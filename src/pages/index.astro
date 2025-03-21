@@ -3,32 +3,67 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-<div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
-  <h1 class="text-2xl font-bold mb-4 text-center">Search Flights</h1>
-  <form action="availability-and-fare.html" method="GET" class="space-y-4">
+  <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
+    <h1 class="text-2xl font-bold mb-4 text-center">Search Flights</h1>
+    <form action="availability-and-fare.html" method="GET" class="space-y-4">
       <div>
-          <label class="block text-sm font-medium text-gray-700">Origin</label>
-          <input type="text" name="origin" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md">
+        <label class="block text-sm font-medium text-gray-700">Origin</label>
+        <input
+          type="text"
+          name="origin"
+          required
+          class="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+        />
       </div>
       <div>
-          <label class="block text-sm font-medium text-gray-700">Destination</label>
-          <input type="text" name="destination" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md">
+        <label class="block text-sm font-medium text-gray-700"
+          >Destination</label
+        >
+        <input
+          type="text"
+          name="destination"
+          required
+          class="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+        />
       </div>
       <div class="grid grid-cols-2 gap-4">
-          <div>
-              <label class="block text-sm font-medium text-gray-700">Departure</label>
-              <input type="date" name="departure" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md">
-          </div>
-          <div>
-              <label class="block text-sm font-medium text-gray-700">Return</label>
-              <input type="date" name="return" class="mt-1 block w-full p-2 border border-gray-300 rounded-md">
-          </div>
+        <div id="departure">
+          <label class="block text-sm font-medium text-gray-700"
+            >Departure</label
+          >
+          <input
+            type="date"
+            name="departure"
+            required
+            class="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Return</label>
+          <input
+            type="date"
+            name="return"
+            class="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+          />
+        </div>
       </div>
       <div>
-          <label class="block text-sm font-medium text-gray-700">Passengers</label>
-          <input type="number" name="passengers" min="1" value="1" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md">
+        <label class="block text-sm font-medium text-gray-700">Passengers</label
+        >
+        <input
+          type="number"
+          name="passengers"
+          min="1"
+          value="1"
+          required
+          class="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+        />
       </div>
-      <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Search</button>
-  </form>
-</div>
+      <button
+        type="submit"
+        class="btn w-full bg-blue-500 text-white py-2 rounded-md hover:bg-green-600"
+        >Search</button
+      >
+    </form>
+  </div>
 </Layout>
